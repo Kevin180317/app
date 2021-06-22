@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-title>Login</ion-title>
+  
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="inicio"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <br>
+  <center>
+    <img src="assets/img/logo.png" alt="">
+  </center>
+          
+  
+  <ion-item>
+
+  
+    <ion-label position="floating">Correo</ion-label>
+    <ion-input type="email" [(ngModel)]="user.email" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Contraseña</ion-label>
+    <ion-input type="password" [(ngModel)]="user.password" required></ion-input>
+  </ion-item>
+  <br>
+  <ion-button
+    class="ion-padding"
+    color="primary"
+    expand="full"
+    (click)="login(user)"
+    >Iniciar Sesion</ion-button>
+<br>
+<center>
+  <p class="login" >¿Aun no tienes cuenta? <a href="register">Crear Cuenta</a></p>
+
+</center>
+
+</ion-content>

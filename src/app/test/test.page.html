@@ -1,0 +1,728 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-title>Test</ion-title>
+  <ion-buttons slot="start">
+      <ion-back-button defaultHref="local1"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+        <ion-radio-group value="covid" [(ngModel)]="c">
+          <ion-list-header>
+            <ion-label>¿Cuáles son los síntomas de la COVID-19?</ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label>Gripa, Comezon y Nauseas</ion-label>
+            <ion-radio slot="start" value="a"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>Resequedad en la piel y Alucinaciones</ion-label>
+            <ion-radio slot="start" value="b"></ion-radio>
+          </ion-item>
+          <ion-item>
+            <ion-label>Fiebre, Tos y Sensacion de falta de aire</ion-label>
+            <ion-radio slot="start" value="c"></ion-radio>
+          </ion-item>
+
+        <ion-item><ion-chip color="secondary">
+           <ion-label color="dark">{{sc}}</ion-label>
+            </ion-chip></ion-item>
+        </ion-radio-group>
+      </ion-list>
+
+      <ion-list>
+        <ion-radio-group  [(ngModel)]="c2">
+          <ion-list-header>
+            <ion-label>
+              ¿Cuándo aparecen los síntomas de la COVID-19?
+             </ion-label> 
+          </ion-list-header>
+                
+           <ion-item>
+            <ion-label>Despues de 14 dias</ion-label>
+            <ion-radio slot="start" value="a"></ion-radio>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label>Despues de un mes</ion-label>
+            <ion-radio slot="start" value="b"></ion-radio>
+          </ion-item>
+  
+          <ion-item>
+            <ion-label>Desppues de 1 semana</ion-label>
+            <ion-radio slot="start" value="c"></ion-radio>
+          </ion-item>
+      
+       
+    
+          <ion-item><ion-chip color="secondary">
+            <ion-label color="dark">{{sc2}}</ion-label>
+            </ion-chip></ion-item>
+        </ion-radio-group>
+      </ion-list>
+  
+       
+  
+      <ion-list>
+        <ion-radio-group  [(ngModel)]="c3">
+          <ion-list-header>
+            <ion-label>
+              ¿Cuánto duran los síntomas de la COVID-19?      
+           </ion-label> 
+          </ion-list-header>
+                
+           <ion-item>
+            <ion-label> 1 semana</ion-label>
+            <ion-radio slot="start" value="a"></ion-radio>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label>3 meses</ion-label>
+            <ion-radio slot="start" value="b"></ion-radio>
+          </ion-item>
+  
+          <ion-item>
+            <ion-label>2 semanas</ion-label>
+            <ion-radio slot="start" value="c"></ion-radio>
+          </ion-item>
+      
+       
+    
+          <ion-item><ion-chip color="secondary">
+            <ion-label color="dark">{{sc3}}</ion-label>
+            </ion-chip></ion-item>
+        </ion-radio-group>
+      </ion-list>
+
+      <ion-list>
+        <ion-radio-group  [(ngModel)]="c4">
+          <ion-list-header>
+            <ion-label>
+              ¿La COVID-19 afecta solo a personas mayores o con enfermedades preexistentes?
+                         </ion-label> 
+          </ion-list-header>
+                
+           <ion-item>
+            <ion-label>Solo a personas mayores</ion-label>
+            <ion-radio slot="start" value="a"></ion-radio>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label>NO. A cualquier edad puedes infectarte</ion-label>
+            <ion-radio slot="start" value="b"></ion-radio>
+          </ion-item>
+  
+          <ion-item>
+            <ion-label>Si</ion-label>
+            <ion-radio slot="start" value="c"></ion-radio>
+          </ion-item>
+      
+       
+    
+          <ion-item><ion-chip color="secondary">
+            <ion-label color="dark">{{sc4}}</ion-label>
+            </ion-chip></ion-item>
+        </ion-radio-group>
+      </ion-list>
+      <ion-list>
+        <ion-radio-group  [(ngModel)]="c5">
+          <ion-list-header>
+            <ion-label>
+              ¿Cuáles son los grupos vulnerables?             </ion-label> 
+          </ion-list-header>
+                
+           <ion-item>
+            <ion-label>Personas activas fisicamente</ion-label>
+            <ion-radio slot="start" value="a"></ion-radio>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label>Infantes</ion-label>
+            <ion-radio slot="start" value="b"></ion-radio>
+          </ion-item>
+  
+          <ion-item>
+            <ion-label>Mayores de 60 años</ion-label>
+            <ion-radio slot="start" value="c"></ion-radio>
+          </ion-item>
+      
+       
+    
+          <ion-item><ion-chip color="secondary">
+            <ion-label color="dark">{{sc5}}</ion-label>
+            </ion-chip></ion-item>
+        </ion-radio-group>
+      </ion-list>
+      <ion-list>
+        <ion-radio-group  [(ngModel)]="c6">
+          <ion-list-header>
+            <ion-label>
+              ¿Cómo se transmite el nuevo coronavirus?             </ion-label> 
+          </ion-list-header>
+                
+           <ion-item>
+            <ion-label>Con Secreciones respiratorias que generan con la tos</ion-label>
+            <ion-radio slot="start" value="a"></ion-radio>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label>De forma auditiva</ion-label>
+            <ion-radio slot="start" value="b"></ion-radio>
+          </ion-item>
+  
+        
+          <ion-item>
+            <ion-label>Por medio de la sangre</ion-label>
+            <ion-radio slot="start" value="c"></ion-radio>
+          </ion-item>
+       
+    
+          <ion-item><ion-chip color="secondary">
+            <ion-label color="dark">{{sc6}}</ion-label>
+            </ion-chip></ion-item>
+        </ion-radio-group>
+      </ion-list>
+      <ion-list>
+        <ion-radio-group  [(ngModel)]="c7">
+          <ion-list-header>
+            <ion-label>
+              ¿Es posible volverse a contagiar por el virus?
+            </ion-label> 
+          </ion-list-header>
+                
+           <ion-item>
+            <ion-label>Si</ion-label>
+            <ion-radio slot="start" value="a"></ion-radio>
+          </ion-item>
+  
+           
+          <ion-item>
+            <ion-label>No existe evidencia</ion-label>
+            <ion-radio slot="start" value="b"></ion-radio>
+          </ion-item>
+      
+       
+    
+          <ion-item><ion-chip color="secondary">
+            <ion-label color="dark">{{sc7}}</ion-label>
+            </ion-chip></ion-item>
+        </ion-radio-group>
+      </ion-list>
+      <ion-list>
+        <ion-radio-group  [(ngModel)]="c8">
+          <ion-list-header>
+            <ion-label>
+              ¿Existe un tratamiento para la COVID-19?
+            </ion-label> 
+          </ion-list-header>
+                
+           <ion-item>
+            <ion-label>Si</ion-label>
+            <ion-radio slot="start" value="a"></ion-radio>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label>Talvez</ion-label>
+            <ion-radio slot="start" value="b"></ion-radio>
+          </ion-item>
+  
+        
+          <ion-item>
+            <ion-label>No existe un antiviral especifico</ion-label>
+            <ion-radio slot="start" value="c"></ion-radio>
+          </ion-item>
+       
+    
+          <ion-item><ion-chip color="secondary">
+            <ion-label color="dark">{{sc8}}</ion-label>
+            </ion-chip></ion-item>
+        </ion-radio-group>
+      </ion-list>
+
+      <ion-list>
+        <ion-radio-group  [(ngModel)]="c9">
+          <ion-list-header>
+            <ion-label>
+              ¿Existe alguna vacuna?
+            </ion-label> 
+          </ion-list-header>
+                
+           <ion-item>
+            <ion-label>No</ion-label>
+            <ion-radio slot="start" value="a"></ion-radio>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label>Si</ion-label>
+            <ion-radio slot="start" value="b"></ion-radio>
+          </ion-item>
+  
+        
+          <ion-item>
+            <ion-label>No se necesita</ion-label>
+            <ion-radio slot="start" value="c"></ion-radio>
+          </ion-item>
+      
+    
+          <ion-item><ion-chip color="secondary">
+            <ion-label color="dark">{{sc9}}</ion-label>
+            </ion-chip></ion-item>
+        </ion-radio-group>
+      </ion-list>
+      <ion-list>
+        <ion-radio-group  [(ngModel)]="c10">
+          <ion-list-header>
+            <ion-label>
+              ¿Son eficaces los antibióticos para prevenir o tratar la COVID-19?
+                         </ion-label> 
+          </ion-list-header>
+                
+           <ion-item>
+            <ion-label>Si</ion-label>
+            <ion-radio slot="start" value="a"></ion-radio>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label>No</ion-label>
+            <ion-radio slot="start" value="b"></ion-radio>
+          </ion-item>
+           
+          <ion-item>
+            <ion-label>talvez</ion-label>
+            <ion-radio slot="start" value="c"></ion-radio>
+          </ion-item>
+       
+    
+          <ion-item><ion-chip color="secondary">
+            <ion-label color="dark">{{sc10}}</ion-label>
+            </ion-chip></ion-item>
+        </ion-radio-group>
+      </ion-list>
+      <ion-list>
+        <ion-radio-group  [(ngModel)]="c11">
+          <ion-list-header>
+            <ion-label>
+              ¿Qué puedo hacer para protegerme y prevenir la propagación de la enfermedad?             </ion-label> 
+          </ion-list-header>
+                
+           <ion-item>
+            <ion-label>Higiene de manos, no contacto cercano con personas, uso de mascarilla</ion-label>
+            <ion-radio slot="start" value="a"></ion-radio>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label>evitar el uso de cubrebocas</ion-label>
+            <ion-radio slot="start" value="b"></ion-radio>
+          </ion-item>
+  
+         
+          <ion-item>
+            <ion-label>ir a lugares con alta actividad de personas</ion-label>
+            <ion-radio slot="start" value="c"></ion-radio>
+          </ion-item>
+       
+    
+          <ion-item><ion-chip color="secondary">
+            <ion-label color="dark">{{sc11}}</ion-label>
+            </ion-chip></ion-item>
+        </ion-radio-group>
+      </ion-list>
+      <ion-list>
+        <ion-radio-group  [(ngModel)]="c12">
+          <ion-list-header>
+            <ion-label>
+              ¿Cómo hay que lavarse las manos?             </ion-label> 
+          </ion-list-header>
+                
+           <ion-item>
+            <ion-label>solo con agua</ion-label>
+            <ion-radio slot="start" value="a"></ion-radio>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label>no es necesario el lavado de manos</ion-label>
+            <ion-radio slot="start" value="b"></ion-radio>
+          </ion-item>
+  
+        
+      
+          <ion-item>
+            <ion-label>Debe realizar un lavo de 1 minuto</ion-label>
+            <ion-radio slot="start" value="c"></ion-radio>
+          </ion-item>
+       
+    
+          <ion-item><ion-chip color="secondary">
+            <ion-label color="dark">{{sc12}}</ion-label>
+            </ion-chip></ion-item>
+        </ion-radio-group>
+      </ion-list>
+      <ion-list>
+        <ion-radio-group  [(ngModel)]="c13">
+          <ion-list-header>
+            <ion-label>
+              ¿Por qué no se deben fabricar geles hidroalcohólicos destinados a la higiene de las manos en casa?             </ion-label> 
+          </ion-list-header>
+                
+           <ion-item>
+            <ion-label>para no intoxicarse</ion-label>
+            <ion-radio slot="start" value="a"></ion-radio>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label>no se necesita geles</ion-label>
+            <ion-radio slot="start" value="b"></ion-radio>
+          </ion-item>
+  
+        
+          <ion-item>
+            <ion-label>Condiciones de asepsia</ion-label>
+            <ion-radio slot="start" value="c"></ion-radio>
+          </ion-item>
+      
+       
+    
+          <ion-item><ion-chip color="secondary">
+            <ion-label color="dark">{{sc13}}</ion-label>
+            </ion-chip></ion-item>
+        </ion-radio-group>
+      </ion-list>
+      <ion-list>
+        <ion-radio-group  [(ngModel)]="c14">
+          <ion-list-header>
+            <ion-label>
+              ¿Son iguales todos los alcoholes que se encuentran en el mercado?             </ion-label> 
+          </ion-list-header>
+                
+           <ion-item>
+            <ion-label>Si</ion-label>
+            <ion-radio slot="start" value="a"></ion-radio>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label>No</ion-label>
+            <ion-radio slot="start" value="b"></ion-radio>
+          </ion-item>
+
+          
+          <ion-item>
+            <ion-label>todos tienen la misma funcion</ion-label>
+            <ion-radio slot="start" value="c"></ion-radio>
+          </ion-item>
+  
+        
+      
+       
+    
+          <ion-item><ion-chip color="secondary">
+            <ion-label color="dark">{{sc14}}</ion-label>
+            </ion-chip></ion-item>
+        </ion-radio-group>
+      </ion-list>
+      
+      <ion-list>
+        <ion-radio-group  [(ngModel)]="c15">
+          <ion-list-header>
+            <ion-label>
+              ¿Puede transmitirse el virus causante de infección por COVID-19 a través del aire?      
+            </ion-label> 
+          </ion-list-header>
+                
+           <ion-item>
+            <ion-label>No</ion-label>
+            <ion-radio slot="start" value="a"></ion-radio>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label>Solo por goticulas respiratorias</ion-label>
+            <ion-radio slot="start" value="b"></ion-radio>
+          </ion-item>
+  
+        
+          <ion-item>
+            <ion-label>solo por medio de las plantas</ion-label>
+            <ion-radio slot="start" value="c"></ion-radio>
+          </ion-item>
+      
+       
+    
+          <ion-item><ion-chip color="secondary">
+            <ion-label color="dark">{{sc15}}</ion-label>
+            </ion-chip></ion-item>
+        </ion-radio-group>
+      </ion-list>
+      
+      <ion-list>
+        <ion-radio-group  [(ngModel)]="c16">
+          <ion-list-header>
+            <ion-label>
+              ¿Debo utilizar mascarillas para protegerme?             </ion-label> 
+          </ion-list-header>
+                
+           <ion-item>
+            <ion-label>Si</ion-label>
+            <ion-radio slot="start" value="a"></ion-radio>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label>solo dentro de casa</ion-label>
+            <ion-radio slot="start" value="b"></ion-radio>
+          </ion-item>
+  
+        
+      
+          <ion-item>
+            <ion-label>No</ion-label>
+            <ion-radio slot="start" value="c"></ion-radio>
+          </ion-item>
+       
+    
+          <ion-item><ion-chip color="secondary">
+            <ion-label color="dark">{{sc16}}</ion-label>
+            </ion-chip></ion-item>
+        </ion-radio-group>
+      </ion-list>
+      <ion-list>
+        <ion-radio-group  [(ngModel)]="c17">
+          <ion-list-header>
+            <ion-label>
+              ¿Puedo volver a utilizar una mascarilla no reutilizable si no ha pasado el periodo de uso recomendado?             </ion-label> 
+          </ion-list-header>
+                
+           <ion-item>
+            <ion-label>Si</ion-label>
+            <ion-radio slot="start" value="a"></ion-radio>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label>solo si esta humeda</ion-label>
+            <ion-radio slot="start" value="b"></ion-radio>
+          </ion-item>
+  
+        
+          <ion-item>
+            <ion-label>Depende si no hay un riesgo evidente</ion-label>
+            <ion-radio slot="start" value="c"></ion-radio>
+          </ion-item>
+      
+       
+    
+          <ion-item><ion-chip color="secondary">
+            <ion-label color="dark">{{sc17}}</ion-label>
+            </ion-chip></ion-item>
+        </ion-radio-group>
+      </ion-list>
+      <ion-list>
+        <ion-radio-group  [(ngModel)]="c18">
+          <ion-list-header>
+            <ion-label>
+              ¿Se puede pulverizar alcohol o lejía para la desinfección de una mascarilla?             </ion-label> 
+          </ion-list-header>
+                
+           <ion-item>
+            <ion-label>Si</ion-label>
+            <ion-radio slot="start" value="a"></ion-radio>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label>No</ion-label>
+            <ion-radio slot="start" value="b"></ion-radio>
+          </ion-item>
+  
+        
+        
+      
+       
+    
+          <ion-item><ion-chip color="secondary">
+            <ion-label color="dark">{{sc18}}</ion-label>
+            </ion-chip></ion-item>
+        </ion-radio-group>
+      </ion-list>
+      <ion-list>
+        <ion-radio-group  [(ngModel)]="c19">
+          <ion-list-header>
+            <ion-label>
+              Las mascarillas reutilizables, ¿Durante cuánto tiempo las puede utilizar?
+            </ion-label> 
+          </ion-list-header>
+                
+           <ion-item>
+            <ion-label>se pueden usar siempre</ion-label>
+            <ion-radio slot="start" value="a"></ion-radio>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label>4 horas</ion-label>
+            <ion-radio slot="start" value="b"></ion-radio>
+          </ion-item>
+  
+        
+      
+          <ion-item>
+            <ion-label>2 horas</ion-label>
+            <ion-radio slot="start" value="c"></ion-radio>
+          </ion-item>
+       
+    
+          <ion-item><ion-chip color="secondary">
+            <ion-label color="dark">{{sc19}}</ion-label>
+            </ion-chip></ion-item>
+        </ion-radio-group>
+      </ion-list>
+
+      <ion-list>
+        <ion-radio-group  [(ngModel)]="c20">
+          <ion-list-header>
+            <ion-label>
+              ¿Debo utilizar guantes cuando salgo a la calle para protegerme del coronavirus?            </ion-label> 
+          </ion-list-header>
+                
+           <ion-item>
+            <ion-label>Si</ion-label>
+            <ion-radio slot="start" value="a"></ion-radio>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label>No</ion-label>
+            <ion-radio slot="start" value="b"></ion-radio>
+          </ion-item>
+  
+        
+      
+       
+    
+          <ion-item><ion-chip color="secondary">
+            <ion-label color="dark">{{sc20}}</ion-label>
+            </ion-chip></ion-item>
+        </ion-radio-group>
+      </ion-list>
+      <ion-list>
+        <ion-radio-group  [(ngModel)]="c21">
+          <ion-list-header>
+            <ion-label>
+              ¿Cuánto tiempo sobrevive el virus en una superficie?            </ion-label> 
+          </ion-list-header>
+                
+           <ion-item>
+            <ion-label>Puede variar el tiempo</ion-label>
+            <ion-radio slot="start" value="a"></ion-radio>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label>Meses</ion-label>
+            <ion-radio slot="start" value="b"></ion-radio>
+          </ion-item>
+  
+        
+      
+          <ion-item>
+            <ion-label>Minutos</ion-label>
+            <ion-radio slot="start" value="c"></ion-radio>
+          </ion-item>
+       
+    
+          <ion-item><ion-chip color="secondary">
+            <ion-label color="dark">{{sc21}}</ion-label>
+            </ion-chip></ion-item>
+        </ion-radio-group>
+      </ion-list>
+      <ion-list>
+        <ion-radio-group  [(ngModel)]="c22">
+          <ion-list-header>
+            <ion-label>
+              ¿Se debe presentar tos, fiebre y dificultad respiratoria para tomar medidas de cuarentena?            </ion-label> 
+          </ion-list-header>
+                
+           <ion-item>
+            <ion-label>Si</ion-label>
+            <ion-radio slot="start" value="a"></ion-radio>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label>No</ion-label>
+            <ion-radio slot="start" value="b"></ion-radio>
+          </ion-item>
+  
+        
+      
+        
+       
+    
+          <ion-item><ion-chip color="secondary">
+            <ion-label color="dark">{{sc22}}</ion-label>
+            </ion-chip></ion-item>
+        </ion-radio-group>
+      </ion-list>
+      <ion-list>
+        <ion-radio-group  [(ngModel)]="c23">
+          <ion-list-header>
+            <ion-label>
+              Estoy embarazada. ¿Existe algún riesgo especial en relación con COVID-19?            </ion-label> 
+          </ion-list-header>
+                
+           <ion-item>
+            <ion-label>Si</ion-label>
+            <ion-radio slot="start" value="a"></ion-radio>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label>No</ion-label>
+            <ion-radio slot="start" value="b"></ion-radio>
+          </ion-item>
+  
+         
+         
+      
+       
+    
+          <ion-item><ion-chip color="secondary">
+            <ion-label color="dark">{{sc23}}</ion-label>
+            </ion-chip></ion-item>
+        </ion-radio-group>
+      </ion-list>
+      <ion-list>
+        <ion-radio-group  [(ngModel)]="c24">
+          <ion-list-header>
+            <ion-label>
+              ¿Cuál es el botiquín básico que debemos tener en casa por si algún miembro tuviera el virus?            </ion-label> 
+          </ion-list-header>
+                
+           <ion-item>
+            <ion-label>No se necesita un botiquin</ion-label>
+            <ion-radio slot="start" value="a"></ion-radio>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label>solo debe tener remedios caseros</ion-label>
+            <ion-radio slot="start" value="b"></ion-radio>
+          </ion-item>
+  
+        
+      
+        
+       
+    
+          <ion-item><ion-chip color="secondary">
+            <ion-label color="dark">{{sc24}}</ion-label>
+            </ion-chip></ion-item>
+        </ion-radio-group>
+      </ion-list>
+  
+    <center>
+      <ion-button (click)="DoEnviar()" color="primary">Enviar</ion-button>
+    </center>
+    
+    <ion-item><ion-chip color="secondary">
+      <ion-label color="dark">tienes:  {{calif}} Respuestas buenas de un total de 24</ion-label>
+      </ion-chip></ion-item>
+    
+      <ion-item><ion-chip color="secondary">
+        <ion-label color="dark">{{res}}</ion-label>
+        </ion-chip></ion-item>
+    
+  
+  
+  </ion-content>

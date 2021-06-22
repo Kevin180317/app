@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>edit-agenda</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-item>
+    <ion-label position="floating">ApellidoPaterno</ion-label>
+    <ion-input type="text" [(ngModel)]="agenda.ap" required></ion-input>
+  </ion-item>
+  
+  
+  <ion-item>
+    <ion-label position="floating">ApellidoMaterno</ion-label>
+    <ion-input type="text" [(ngModel)]="agenda.am" required></ion-input>
+  </ion-item>
+ 
+  <ion-item>
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input type="text" [(ngModel)]="agenda.nombre" required></ion-input>
+  </ion-item>
+
+  <ion-content>
+    <ion-item>
+      <ion-label position="floating">Fecha</ion-label>
+      <ion-input type="text" [(ngModel)]="agenda.fecha" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Descripcion</ion-label>
+      <ion-input type="text" [(ngModel)]="agenda.descripcion" required></ion-input>
+    </ion-item>
+  
+    
+      <ion-item>
+        <ion-label position="floating">Lugar</ion-label>
+        <ion-input type="text" [(ngModel)]="agenda.lugar" required></ion-input>
+      </ion-item>
+
+
+
+  <ion-button
+    class="ion-padding"
+    color="primary"
+    expand="full"
+    (click)="updateAgenda(agenda)"
+    >Update</ion-button
+  >
+</ion-content>
+

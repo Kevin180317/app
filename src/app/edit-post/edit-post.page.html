@@ -1,0 +1,172 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-title>Editar Expediente Clinico</ion-title>
+  
+  <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <center><h2>FICHA DE IDENTIFICACION</h2></center>
+  <ion-item>
+    <ion-label position="floating">Apellido Paterno</ion-label>
+    <ion-input type="text" [(ngModel)]="post.apellidoP" required></ion-input>
+  </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Apellido Materno</ion-label>
+      <ion-input type="text" [(ngModel)]="post.apellidoM" required></ion-input>
+    </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Nombres</ion-label>
+    <ion-textarea [(ngModel)]="post.nombres" required></ion-textarea>
+  </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Edad</ion-label>
+      <ion-input type="number" [(ngModel)]="post.edad" required></ion-input>
+    </ion-item>
+  
+      <ion-item>
+        <ion-label position="floating">Sexo</ion-label>
+        <ion-input type="text" [(ngModel)]="post.sexo" required></ion-input>
+      </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Estado Civil</ion-label>
+          <ion-input type="text" [(ngModel)]="post.estado" required></ion-input>
+        </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Domicilio</ion-label>
+            <ion-input type="text" [(ngModel)]="post.domicilio" required></ion-input>
+          </ion-item>
+        
+          
+      
+          
+          <ion-item>
+            <ion-label>Tipo de sangre</ion-label>
+            <ion-select   [(ngModel)]="post.sangre" required>
+              <ion-select-option value="O negativo">O negativo</ion-select-option>
+              <ion-select-option value="O positivo">O positivo</ion-select-option>
+              <ion-select-option value="A negativo">A negativo</ion-select-option>
+              <ion-select-option value="A positivo">A positivo</ion-select-option>
+              <ion-select-option value="B negativo">B negativo</ion-select-option>
+              <ion-select-option value="B positivo">B positivo</ion-select-option>
+              <ion-select-option value="AB negativo">AB negativo</ion-select-option>
+              <ion-select-option value="AB positivo">AB positivo</ion-select-option>
+            </ion-select>
+          </ion-item>
+        
+          <ion-item>
+            <ion-label position="floating">Fecha de nacimiento</ion-label>
+            <ion-input type="text" [(ngModel)]="post.nacimiento" required></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Lugar de nacimiento</ion-label>
+            <ion-input type="text" [(ngModel)]="post.lugar" required></ion-input>
+          </ion-item>
+      
+          <ion-item>
+            <ion-label>Seguro Social</ion-label>
+            <ion-select   [(ngModel)]="post.seguro" required>
+              <ion-select-option value="Si">Si</ion-select-option>
+              <ion-select-option value="No">No</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Telefono</ion-label>
+            <ion-input type="tel" [(ngModel)]="post.telefono" required></ion-input>
+          </ion-item>
+          <center><h2>PADECIMIENTO ACTUAL</h2></center>
+
+          <ion-item>
+            <ion-label position="floating">Padecimiento Actual</ion-label>
+            <ion-input type="text" [(ngModel)]="post.padecimiento" required></ion-input>
+          </ion-item>
+          
+          <ion-item>
+            <ion-label position="floating">Peso</ion-label>
+            <ion-input type="decimal" [(ngModel)]="post.peso" required></ion-input>
+          </ion-item>
+
+          <center><h2>ANTECEDENTES PERSONALES NO PATOLOGICOS</h2></center>
+
+          <ion-item>
+            <ion-label>Vacunacion completa</ion-label>
+            <ion-select   [(ngModel)]="post.vacuna" required>
+              <ion-select-option value="Si">Si</ion-select-option>
+              <ion-select-option value="No">No</ion-select-option>
+            </ion-select>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Enfermedades de la infancia</ion-label>
+            <ion-input type="text" [(ngModel)]="post.enfermedades" required></ion-input>
+          </ion-item>
+          
+          <ion-item>
+            <ion-label>Tipo de Alimentacion</ion-label>
+            <ion-select   [(ngModel)]="post.alimentacion" required>
+              <ion-select-option value="Buena">Buena</ion-select-option>
+              <ion-select-option value="Mala">Mala</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Vivienda</ion-label>
+            <ion-input type="text" [(ngModel)]="post.vivienda" required></ion-input>
+          </ion-item>
+          <center><h2>ANTECEDENTES PERSONALES PATOLOGICOS</h2></center>
+
+          <ion-item>
+            <ion-label>Diabetes</ion-label>
+            <ion-select   [(ngModel)]="post.diabetes" required>
+              <ion-select-option value="Si">Si</ion-select-option>
+              <ion-select-option value="No">No</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Hipertension</ion-label>
+            <ion-select   [(ngModel)]="post.hipertension" required>
+              <ion-select-option value="Si">Si</ion-select-option>
+              <ion-select-option value="No">No</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Respiratorias</ion-label>
+            <ion-select   [(ngModel)]="post.respiratorias" required>
+              <ion-select-option value="Si">Si</ion-select-option>
+              <ion-select-option value="No">No</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          <ion-item>
+            <ion-label position="floating">Alergias</ion-label>
+            <ion-input type="text" [(ngModel)]="post.alergias" required></ion-input>
+          </ion-item>
+          
+          <ion-item>
+            <ion-label>Cirugias</ion-label>
+            <ion-select   [(ngModel)]="post.cirugias" required>
+              <ion-select-option value="Si">Si</ion-select-option>
+              <ion-select-option value="No">No</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+  <ion-button
+    class="ion-padding"
+    color="primary"
+    expand="full"
+    (click)="updatePost(post)"
+    >Actualizar</ion-button
+  >
+  <br>
+  <br>
+</ion-content>

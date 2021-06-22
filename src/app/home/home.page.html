@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-title>Expedientes Clinicos</ion-title>
+  
+  <ion-buttons slot="start">
+      <ion-back-button defaultHref="local1"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button [routerLink]="['/add-post']">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+
+   
+  <ion-searchbar showcancelbutton (ionInput)="filterList($event)" placeholder="Buscar"></ion-searchbar>
+  <ion-list>
+    <ion-item-sliding *ngFor="let post of posts">
+      <ion-item class="no-padding">
+        <ion-label>
+          
+          <h2>Apellido Paterno: {{ post.apellidoP }}</h2>
+          <h2>Apellido Materno: {{ post.apellidoM }}</h2>
+          <h2>Nombre: {{ post.nombres }}</h2>
+          <h2>Edad: {{ post.edad }}</h2>
+          <h2>Sexo: {{ post.sexo }}</h2>
+          <h2>Estado: {{ post.estado }}</h2>
+          <h2>Domicilio: {{ post.domicilio }}</h2>
+          <h2>Tipo de Sangre: {{ post.sangre }}</h2>
+          <h2>Fecha de nacimiento: {{ post.nacimiento }}</h2>
+          <h2>Lugar de nacimiento: {{ post.lugar }}</h2>
+          <h2>Seguro: {{ post.seguro }}</h2>
+          <h2>Telefono: {{ post.telefono }}</h2>
+          <h2>Padecimiento: {{ post.padecimiento }}</h2>
+          <h2>Peso: {{ post.peso }}</h2>
+          <h2>Vacunacion completa: {{ post.vacuna }}</h2>
+          <h2>Enfermedades: {{ post.enfermedades }}</h2>
+          <h2>Tipo de Alimentacion: {{ post.alimentacion }}</h2>
+          <h2>Vivienda: {{ post.vivienda }}</h2>
+          <h2>Diabetes: {{ post.diabetes }}</h2>
+          <h2>Hipertension: {{ post.hipertension }}</h2>
+          <h2>Respiratorias: {{ post.respiratorias }}</h2>
+          <h2>Alergias: {{ post.alergias }}</h2>
+          <h2>Cirugias: {{ post.cirugias }}</h2>
+        </ion-label>
+      </ion-item>
+
+      <ion-item-options side="start">
+        <ion-item-option [routerLink]="['/edit-post/', post.id]">
+          <ion-icon slot="icon-only" name="pencil-outline"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+
+      <ion-item-options side="end">
+        <ion-item-option color="danger" (click)="deletePost(post.id)">
+          <ion-icon slot="icon-only" name="trash"></ion-icon>
+        </ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+</ion-content>
